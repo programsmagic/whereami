@@ -1,4 +1,4 @@
-import { Globe, Zap, Shield } from 'lucide-react'
+import { MapPin, Zap, Shield, Radio } from 'lucide-react'
 
 const Hero = () => {
   return (
@@ -13,35 +13,35 @@ const Hero = () => {
         {/* Logo and Badge */}
         <div className="flex justify-center mb-8 animate-fade-in">
           <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/80 backdrop-blur-lg rounded-full shadow-lg border border-white/20">
-            <Globe className="w-8 h-8 text-primary-600 animate-pulse-slow" />
-            <span className="text-2xl font-bold text-gradient">IPLookup Pro</span>
+            <MapPin className="w-8 h-8 text-primary-600 animate-pulse-slow" />
+            <span className="text-2xl font-bold text-gradient">LiveTrack Pro</span>
           </div>
         </div>
 
         {/* Main Heading */}
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 animate-slide-up">
-          Your IP Address
-          <span className="block text-gradient mt-2">Revealed Instantly</span>
+          Website Visitor
+          <span className="block text-gradient mt-2">Live Location Tracking</span>
         </h1>
 
         <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto animate-slide-up">
-          Get comprehensive information about your IP address, location, ISP, and network details in real-time. 
-          Fast, accurate, and completely free.
+          Track your website visitors in real-time with hybrid IP-based and GPS geolocation. 
+          Get city-level data instantly + precise coordinates with user consent.
         </p>
 
         {/* Feature Pills */}
         <div className="flex flex-wrap justify-center gap-4 mb-12 animate-slide-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 backdrop-blur-sm rounded-full border border-primary-200">
+            <Radio className="w-4 h-4 text-primary-600" />
+            <span className="text-sm font-medium text-gray-700">Real-Time Tracking</span>
+          </div>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 backdrop-blur-sm rounded-full border border-primary-200">
             <Zap className="w-4 h-4 text-primary-600" />
-            <span className="text-sm font-medium text-gray-700">Lightning Fast</span>
+            <span className="text-sm font-medium text-gray-700">Hybrid Approach</span>
           </div>
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 backdrop-blur-sm rounded-full border border-primary-200">
             <Shield className="w-4 h-4 text-primary-600" />
-            <span className="text-sm font-medium text-gray-700">Secure & Private</span>
-          </div>
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 backdrop-blur-sm rounded-full border border-primary-200">
-            <Globe className="w-4 h-4 text-primary-600" />
-            <span className="text-sm font-medium text-gray-700">100% Free</span>
+            <span className="text-sm font-medium text-gray-700">Privacy Compliant</span>
           </div>
         </div>
       </div>

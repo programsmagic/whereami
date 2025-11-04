@@ -1,6 +1,6 @@
 # ⚡ Quick Start Guide
 
-Get your IP Geolocation landing page running in under 2 minutes!
+Get your **Website Visitor Location Tracking** demo running in under 2 minutes!
 
 ## 🏃 Super Quick Start
 
@@ -18,9 +18,10 @@ That's it! Your landing page is now running locally. 🎉
 
 ## 📦 What Just Happened?
 
-- ✅ Installed React, TypeScript, Tailwind CSS, and all dependencies
+- ✅ Installed React, TypeScript, Tailwind CSS, Leaflet.js and dependencies
 - ✅ Started a hot-reload development server
-- ✅ Your IP and location info will display automatically
+- ✅ Your IP and location info displays automatically
+- ✅ GPS tracking button is ready for you to test
 
 ## 🛠️ Available Commands
 
@@ -80,9 +81,17 @@ colors: {
 
 ### Modify Content
 - **Hero section:** `src/components/Hero.tsx`
-- **IP Display:** `src/components/IPDisplay.tsx`
+- **Location Display:** `src/components/LocationDisplay.tsx`
+- **Map Component:** `src/components/LocationMap.tsx`
+- **How It Works:** `src/components/HowItWorks.tsx`
 - **Features:** `src/components/Features.tsx`
 - **Footer:** `src/components/Footer.tsx`
+
+### Test GPS Tracking
+1. Click the **"Enable GPS Tracking"** button
+2. Allow location access when your browser asks
+3. See precise coordinates appear (right panel)
+4. Watch both locations appear on the map
 
 ### Change API Provider
 Edit `src/App.tsx` - Update the `fetchIPInfo` function:
@@ -103,7 +112,12 @@ Your local dev server is accessible on your network:
 
 - [ ] Dependencies installed (`node_modules` folder exists)
 - [ ] Dev server runs without errors
-- [ ] Page loads and displays your IP
+- [ ] Page loads and displays your IP automatically
+- [ ] IP-based location shows in left panel
+- [ ] "Enable GPS Tracking" button appears
+- [ ] Clicking GPS button triggers browser permission
+- [ ] GPS location appears in right panel when allowed
+- [ ] Map displays with markers
 - [ ] All sections render correctly
 - [ ] Responsive on mobile (test with browser dev tools)
 - [ ] No console errors

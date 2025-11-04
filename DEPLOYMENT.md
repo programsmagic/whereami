@@ -19,23 +19,7 @@ This guide will help you deploy your IP Geolocation landing page to GitHub Pages
 5. **Do NOT** initialize with README (we already have one)
 6. Click "Create repository"
 
-### 2. Update Vite Configuration
-
-Open `vite.config.ts` and update the `base` property to match your repository name:
-
-```typescript
-export default defineConfig({
-  plugins: [react()],
-  base: '/your-repo-name/', // Replace with your actual repo name
-})
-```
-
-**Example:** If your repo is named "ip-lookup", use:
-```typescript
-base: '/ip-lookup/',
-```
-
-### 3. Initialize Git and Push to GitHub
+### 2. Initialize Git and Push to GitHub
 
 Run these commands in your project directory:
 
@@ -59,7 +43,7 @@ git push -u origin main
 
 Replace `YOUR_USERNAME` and `YOUR_REPO_NAME` with your actual GitHub username and repository name.
 
-### 4. Configure GitHub Pages
+### 3. Configure GitHub Pages
 
 #### Option A: Using GitHub Actions (Recommended)
 
@@ -97,7 +81,7 @@ This will:
    - Branch: `gh-pages`, folder: `/ (root)`
    - Click Save
 
-### 5. Access Your Live Site
+### 4. Access Your Live Site
 
 After deployment (usually 2-5 minutes), your site will be live at:
 
@@ -134,16 +118,10 @@ If using GitHub Actions, the site will automatically rebuild and deploy when you
 
 ### Issue: Site shows 404 or blank page
 
-**Solution:** Check that the `base` in `vite.config.ts` matches your repository name exactly:
+**Solution:** The app is configured to work on the root path (`/`). If deploying to a custom domain or GitHub Pages with a custom path, you may need to update `vite.config.ts`:
 ```typescript
-base: '/your-repo-name/', // Must include leading and trailing slashes
+base: '/your-repo-name/', // Only if using a subdirectory
 ```
-
-### Issue: CSS/JS files not loading
-
-**Solution:** This is usually due to incorrect `base` path. Verify:
-1. Repository name matches the `base` value
-2. Both leading and trailing slashes are present
 
 ### Issue: GitHub Actions workflow failing
 

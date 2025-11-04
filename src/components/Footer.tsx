@@ -1,4 +1,4 @@
-import { Github, Twitter, Globe } from 'lucide-react'
+import { Github, Twitter, MapPin } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -10,11 +10,11 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Globe className="w-6 h-6 text-primary-400" />
-              <span className="text-xl font-bold text-white">IPLookup Pro</span>
+              <MapPin className="w-6 h-6 text-primary-400" />
+              <span className="text-xl font-bold text-white">LiveTrack Pro</span>
             </div>
             <p className="text-gray-400 text-sm">
-              Fast, accurate, and free IP geolocation service. Get comprehensive information about any IP address instantly.
+              Enterprise-grade website visitor location tracking. Hybrid IP-based and GPS geolocation with real-time analytics.
             </p>
           </div>
 
@@ -34,12 +34,17 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="hover:text-primary-400 transition-colors">
-                  API Documentation
+                  Documentation
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-primary-400 transition-colors">
-                  Privacy Policy
+                  Integration Guide
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-primary-400 transition-colors">
+                  Privacy & GDPR
                 </a>
               </li>
             </ul>
@@ -66,17 +71,20 @@ const Footer = () => {
                 <Twitter className="w-5 h-5" />
               </a>
             </div>
-            <p className="text-gray-400 text-sm">
-              Built with React, TypeScript, and Tailwind CSS
+            <p className="text-gray-400 text-sm mb-3">
+              Built with React, TypeScript, Tailwind CSS & Leaflet.js
+            </p>
+            <p className="text-xs text-gray-500">
+              🔒 Privacy-compliant • Enterprise-ready • Easy integration
             </p>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-800 text-center text-sm">
-          <p>© {currentYear} IPLookup Pro. All rights reserved.</p>
+          <p>© {currentYear} LiveTrack Pro. All rights reserved.</p>
           <p className="text-gray-500 mt-2">
-            Powered by{' '}
+            Geolocation powered by{' '}
             <a
               href="https://ipapi.co"
               target="_blank"
@@ -84,6 +92,16 @@ const Footer = () => {
               className="text-primary-400 hover:text-primary-300"
             >
               ipapi.co
+            </a>
+            {' • '}
+            Maps by{' '}
+            <a
+              href="https://leafletjs.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-400 hover:text-primary-300"
+            >
+              Leaflet.js
             </a>
           </p>
         </div>
