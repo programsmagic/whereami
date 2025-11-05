@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <MapPin className="w-6 h-6 text-primary-400" />
-              <span className="text-xl font-bold text-white">LiveTrack Pro</span>
+              <span className="text-xl font-bold text-white">Where Am I</span>
             </div>
             <p className="text-gray-400 text-sm">
               Enterprise-grade website visitor location tracking. Hybrid IP-based and GPS geolocation with real-time analytics.
@@ -82,7 +82,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-800 text-center text-sm">
-          <p>© {currentYear} LiveTrack Pro. All rights reserved.</p>
+          <p>© {currentYear} Where Am I. All rights reserved.</p>
           <p className="text-gray-500 mt-2">
             Geolocation powered by{' '}
             <a

@@ -1,8 +1,8 @@
-# 🎯 LiveTrack Pro - Product Overview
+# 🎯 Where Am I - Product Overview
 
 ## What Is This?
 
-**LiveTrack Pro** is a working demonstration of **Website Live Location Tracking** - a hybrid geolocation system that tracks website visitors using both IP-based and GPS-based methods.
+**Where Am I** is a working demonstration of **Website Live Location Tracking** - a hybrid geolocation system that tracks website visitors using both IP-based and GPS-based methods.
 
 ## 🚀 Live Demo Features
 

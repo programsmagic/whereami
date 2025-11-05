@@ -1,4 +1,4 @@
-# LiveTrack Pro - Website Visitor Location Tracking
+# Where Am I - Website Visitor Location Tracking
 
 A production-ready landing page demonstrating **hybrid website visitor location tracking** with both IP-based and GPS geolocation. Built with React, TypeScript, Tailwind CSS, Leaflet.js, and Vite.
 
