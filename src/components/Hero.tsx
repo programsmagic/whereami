@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="flex justify-center mb-8 animate-fade-in">
           <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/80 backdrop-blur-lg rounded-full shadow-lg border border-white/20">
             <MapPin className="w-8 h-8 text-primary-600 animate-pulse-slow" />
-            <span className="text-2xl font-bold text-gradient">LiveTrack Pro</span>
+            <span className="text-2xl font-bold text-gradient">Where Am I</span>
           </div>
         </div>
 
